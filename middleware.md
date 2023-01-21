@@ -3,13 +3,14 @@
 
 ![middleware](/images/middleware2.png)  
 
-5 catégories principales :  
-1. Le Middleware d'application
-C'est le plus courant. Il est relié directement à l'instance d'express grâce à la méthode `use()`
+## 5 catégories principales :  
+1. Le Middleware d'application  
+C'est le plus courant.  
+Il est relié directement à l'instance d'express grâce à la méthode `use()`
 
 ![cat1](/images/cat1.png)
 
-2. Le Middleware du routeur  
+2. Le Middleware du routeur    
 Il n'est pas relié directement à l'instance d'express mais à l'instance d' `express.Router()`
 
 3. Le Middleware de traitements d'erreurs  
@@ -19,7 +20,7 @@ Il doit prendre 4 arguments pour être identifié comme un middleware de traitem
 
 4. Le Middleware intégré  
 Historiquement, il existait quelques middlewares directement intégrés à Express un peu comme les modules déjà présents dans Node.js  
-Depuis la version 4 d'Expres, il n'y a plus qu'un seul et unique middleware encore intégré à Express, il s'agit de `express.static()`.  
+Depuis la version 4 d'Express, il n'y a plus qu'un seul et unique middleware encore intégré à Express, il s'agit de `express.static()`.  
 Ce middleware a comme responsabilité de servir des documents statiques depuis une API REST comme des images ou un PDF.  
 Les autres middlewares auparavant intégrés dans Express sont toujours utilisables et maintenus par l'équipe derrière Express mais ils sont disponibles sous la forme de modules extérieurs qu'il faut installer.
 

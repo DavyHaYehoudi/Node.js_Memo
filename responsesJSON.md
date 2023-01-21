@@ -56,7 +56,7 @@ Le code de statut enfin, il n'est pas présent dans la requête Http mais unique
 
 ---
 
-`Express` met à notre disposition de quoi convertir en JSON et renseigner le type MIME grâce cette méthode :  
+`Express` met à notre disposition de quoi convertir en JSON et renseigner le type MIME grâce à cette méthode :  
 `res.json()`  
 A noter donc que la méthode `json()` remplace la méthode `send()`
 
